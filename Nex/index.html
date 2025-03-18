@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endex - The autonomous financial analyst</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="section0">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="A beautiful photo">
+                <span style="margin-left: 8px; font-weight: 500;">CompoundN</span>        
+                <div class="nav-links">
+                    <a href="#">Use Cases</a>
+                    <a href="#">Security</a>
+                    <a href="#">Careers</a>
+                </div>
+            </div>
+            
+            <div class="auth-buttons">
+                <a href="#" class="login-btn">Log in</a>
+                <a href="#" class="contact-btn">
+                    <svg class="arrow-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Contact sales
+                </a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>    
+        </nav>
+        <!-- Full-Screen Menu (Initially Hidden) -->
+        <div class="fullscreen-menu" id="fullscreenMenu">
+            <span class="close-menu" onclick="toggleMenu()">✖</span>
+            <a href="#">Use Cases</a>
+            <a href="#">Security</a>
+            <a href="#">Careers</a>
+            <!-- <a href="#" class="login-btn">Log in</a>
+            <a href="#" class="contact-btn">Contact sales</a> -->
+        </div>
+
+        <!-- Hero section -->
+        <section class="hero">
+            <!-- <canvas id="gridCanvas"></canvas> -->
+            
+            <div class="hero-content">
+                <h1 class="hero-title">AI Copilot for <br> Intelligent Investing</h1>
+                
+                <div class="hero-buttons">
+                    <a href="#" class="primary-btn">
+                        Contact sales
+                    </a>
+                    <a href="#" class="secondary-btn">
+                        <svg class="arrow-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        How it works
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Feature box -->
+            <div class="feature-box">
+                <div class="feature-header">
+                    <div class="logo">
+                        <img src="logo.png" alt="A beautiful photo">
+                    </div>
+                    <span class="feature-title">Introducing Nex</span>
+                </div>
+                
+                <p class="feature-description">
+                    World’s best copilot for Intelligent Investing.
+                    Optimize your team's most common
+                    workflows and enhance the quality of
+                    every output. 
+                </p>
+            </div>
+            
+            <!-- Background gradient -->
+            <div class="bg-gradient"></div>
+        </section>
+    </div>
+
+    <!-- 1st section -->
+    <section class="section1">
+        <div class="section1-heading">
+            Meet Nex from CompoundN,<br> Your Copilot for Intelligent Investing
+        </div>
+        <div class="section1-container">
+            <div class="section1-column">
+                <img src="section1photo.png" alt="Sample Image" >
+                <div class="section1-1-text section-text">
+                    Delegate High Frequency Tasks
+                </div>
+                <p>
+                    Nex agents break down tasks into customizable plans with traceable steps. Automate your team's analytical legwork at scale.
+                </p>
+            </div>
+            <div class="section1-column">
+                <video autoplay loop muted playsinline>
+                    <source src="section1vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="section1-1-text section-text">
+                    Reason over All of Your Data
+                </div>
+                <p>
+                    Nex unifies your internal files, external data, and trusted sources into a single searchable plane, enabling every analysis to be as comprehensive as possible.
+                </p>
+            </div>
+        </div>
+        <div class="section1-last">
+            <img src="section1photo2.png" alt="Sample Image" >
+            <video autoplay loop muted playsinline>
+                <source src="section1vid2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    
+    <!-- section2 -->
+    <section class="section2">
+        <div class="section2-column">
+            <div class="section2-text section-text">
+                Build to collaborate with you
+            </div>
+            <br>
+            <br>
+            <p>
+                Answering questions and performing tasks like an
+                analyst would, Nex reveals its thought process
+                and grows with your team over time.
+            </p>
+        </div>
+        <div class="center-line"></div>
+        <div class="section2-column">
+            <img src="section2.jpg" alt="section2">
+        </div>
+    </section>
+
+    <!-- section3 -->
+    <div class="section3">
+        <h1>An AI-native workspace built for the future</h1>
+        <div class="nav-tabs">
+            <a class="active" onclick="changeTab('documents')">Documents</a>
+            <a onclick="changeTab('tables')">Tables</a>
+            <a onclick="changeTab('charts')">Charts</a>
+            <a onclick="changeTab('slides')">Slides</a>
+        </div>
+        <div class="document-preview">
+            <div class="document">
+                <img id="tabImage" src="document.png" alt="Document Preview">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section4 -->
+    <div class="section4">
+        <!-- Left Column -->
+        <div class="section4-column">
+            <video autoplay loop muted playsinline>
+                <source src="section4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="section4-1-text section-text">
+                LLMs Engineered for Finance
+            </div>
+            <p>
+                Custom-built models designed to understand the intricacies of financial concepts and documents: P&Ls, accounting methodologies, diligence files, and more.
+            </p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="section4-column">
+            <video autoplay loop muted playsinline>
+                <source src="section4-2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    
+            <div class="section4-1-text section-text">
+                Traceable from Start to Finish
+            </div>
+            <p>
+                Nex provides integrated citations, augmenting outputs with attribution to underlying sources.
+            </p>
+        </div>
+    </div>
+
+    <!-- section5 -->
+    <section class="section5">
+        <img src="section5.png">
+    </section>
+
+    <!-- section6 -->
+     <section class="section6">
+        <div class="section6-heading">
+            Scale your workforce,multiply your results
+        </div>
+        <p>
+            Use Nex to launch multiple tasks that will continue working in the<br> background, like having an AI workforce 24/7.
+        </p>
+        <video autoplay muted playsinline>
+            <source src="section6.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+     </section>
+
+    <!-- section7 -->
+    <section class="section7">
+        <div class="section7-column">
+            <div class="section7-text section-text">
+                Enterprise-Grade Security
+            </div>
+            <br>
+            <br>
+            <p>
+                All customer data is encrypted both in transit and at rest, utilizing the most robust encryption standards: AES-256 for storage and TLS 1.2/1.3 for secure communication.
+            </p>
+        </div>
+        <div class="center-line"></div>
+        <div class="section7-column">
+            <img src="section7.png" alt="section2">
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
